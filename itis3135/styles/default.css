@@ -1,0 +1,19 @@
+body {
+    background-color:aqua;
+    text-align: center; 
+    font-family: monospace;
+}
+
+a {
+    color:darkgreen;
+    text-decoration: none;
+}
+
+a:hover{
+    color:darkkhaki;
+}
+
+main{
+    margin-left: 20%;
+    margin-right: 20%;
+}
