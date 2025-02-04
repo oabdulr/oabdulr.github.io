@@ -2,6 +2,7 @@ body {
     background-color:aqua;
     text-align: center; 
     font-family: monospace;
+    font-size: medium;
 }
 
 a {
@@ -14,6 +15,15 @@ a:hover{
 }
 
 main{
+    text-align: left;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+h2{
+    text-align: center;
+}
+
+figure{
+    text-align: center;
 }
