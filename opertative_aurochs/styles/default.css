@@ -1,0 +1,49 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #236c8e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+header img {
+    height: 80px;
+    width: 80px;
+    vertical-align: middle;
+}
+header h1 {
+    display: inline;
+    font-size: 2em;
+    margin: 0;
+}
+header p {
+    font-style: italic;
+}
+nav {
+    background-color: #315572;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background-color: #315572;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
