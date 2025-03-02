@@ -1,29 +1,50 @@
 body {
-    background-color:rgb(107, 173, 173);
-    text-align: center; 
+    background-color: rgb(107, 173, 173);
+    text-align: center;
     font-family: monospace;
     font-size: medium;
 }
 
 a {
-    color:darkgreen;
+    color: darkgreen;
     text-decoration: none;
 }
 
-a:hover{
-    color:darkkhaki;
+a:hover {
+    color: darkkhaki;
 }
 
-main{
+main {
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
+    max-width: 1200px;
+    width: 90%; 
+    margin: 0 auto; 
+    padding: 1em; 
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-figure{
+figure {
     text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+    main {
+        width: 95%; 
+    }
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+    }
 }
