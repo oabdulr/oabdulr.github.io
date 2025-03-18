@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Who - 3D Printing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                background-color: rgb(153, 167, 167);
+                text-align: center;
+                font-family: monospace;
+                font-size: medium;
+            }
+
+            a {
+                color: rgb(73, 59, 136);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: rgb(44, 0, 70);
+            }
+
+            main {
+                text-align: left;
+                max-width: 1200px;
+                width: 90%; 
+                margin: 0 auto; 
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            figure {
+                text-align: center;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .smol-box1{
+                width: 30%;
+                margin: auto;
+            }
+
+            .smol-box2{
+                width: 50%;
+                margin: auto;
+            }
+
+            .smol-box3{
+                width: 50%;
+                margin: auto;
+            }
+
+            .smol-box4{
+                width: 50%;
+                margin: auto;
+            }
+
+            .smol-box5{
+                width: 50%;
+                margin: auto;
+            }
+
+            .smol-box6{
+                width: 50%;
+                margin: auto;
+            }
+
+            .smol-box7{
+                width: 70%;
+                margin: auto;
+                text-align: center;
+            }
+
+            .bix-img{
+                width: 120%;
+                margin: auto;
+            }
+
+            /*tablet*/
+            @media (max-width: 768px) {
+                main {
+                    width: 95%; 
+                }
+            }
+
+            /*Mobile*/
+            @media (max-width: 480px) {
+                main {
+                    width: 100%;
+                }
+            }
+        </style>
+        <script src="../scripts/validation.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>What is 3D Printing?</h1>
+            <nav>
+                <a href="#" onclick="showSection('what')">Home</a> ||
+                <a href="#" onclick="showSection('about')">About</a> ||
+                <a href="#" onclick="showSection('best-options')">Options</a> ||
+                <a href="#" onclick="showSection('prices')">Prices</a> ||
+                <a href="#" onclick="showSection('why')">Why</a> ||
+                <a href="#" onclick="showSection('how')">How</a> ||
+                <a href="#" onclick="showSection('ai')">AI</a>
+            </nav>
+        </header>
+        <main>
+            <div class="smol-box1">
+                <p>3D printing is a solution for very expensive manufacturing costs, imaging needed an adapter for a item or needing a foundation for a future design. With 3D Printing you can get phyiscal model within a few hours.</p>
+                <figure>
+                    <img src="images/printing.gif" alt="A 3d printer printing gif">
+                    <figcaption>A 3d printer printing a multicolored globe.</figcaption>
+                </figure>
+            </div>
+
+            <div class="smol-box2">
+                <p>3D printing, also known as additive manufacturing, was first conceptualized in the early 1980s. The technology was pioneered by Charles W. Hull, who invented stereolithography (SLA) in 1983. Hull developed the first 3D printer and founded 3D Systems, a company that remains a leader in the industry today. Stereolithography works by curing liquid resin layer by layer using ultraviolet light, creating solid objects from digital designs.
+                <br><br>As 3D printing evolved, slicer software became an essential tool in the process. A slicer is a specialized program that takes a 3D model, typically in formats like STL or OBJ, and converts it into a series of instructions (known as G-code) that a 3D printer can follow. These instructions tell the printer how to build the object layer by layer, including details like the path of the print head, the amount of material to extrude, and the speed of printing. Popular slicers, such as Cura and PrusaSlicer, allow users to customize settings like layer height, infill density, and print speed, enabling greater precision and flexibility in 3D printing projects.
+                <br><br>Early slicers were rudimentary and required significant technical expertise, but advancements in software have made them more user-friendly and efficient. Modern slicers now offer features like automatic support generation, print time estimation, and even simulation of the printing process to identify potential issues before printing begins. Today, slicers are integral to the 3D printing workflow, serving as the bridge between digital design and physical creation, ensuring that complex designs can be accurately and efficiently translated into tangible objects.</p>
+                <figure>
+                    <img src="images/old_slicer.png" alt="Old Slicer">
+                    <figcaption>A old 3d printer slicer</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/new_slicer.png" alt="New Slicer">
+                    <figcaption>A new 3d printer slicer</figcaption>
+                </figure>
+            </div>
+
+            <div class="smol-box3">
+                <p>What are the best options for 3D Printers? Theres a few to select from, first lets decided which type of printer we want. FDM printers, or the ones that we've mostly seen are the ones that extrude hot plastic from their nozzels, another very popluar option is resin printers. Resin printers are very good at creating detailed models, such as figurines or very low tolerance mechanical parts, where as FDM printers are very easy to maintaine and use and can print things more practically.
+                </p>
+                <figure>
+                    <img src="images/fdm.jpg" alt="Resin 3D Printer">
+                    <figcaption>A FDM 3D Printer, used to create simple and quick models, east to clean</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/resin.jpg" alt="FDM 3D Printer">
+                    <figcaption>A Resin 3D Printer, used to create complex and detailed models, very messy</figcaption>
+                </figure>
+            </div>
+
+            <div class="smol-box4">
+                <p> The best time to buy a 3D printer, whether FDM or resin, would be during the holiday season, especially around Christmas. Sales and deals for printers are abundant, with discounts ranging from 20% to even over 50% off their original prices. Generally, resin printers tend to cost more than FDM printers due to their higher precision and ability to produce detailed prints, making them ideal for intricate models like miniatures or jewelry. However, FDM printers are more affordable and versatile, making them a great choice for beginners or those working on larger, less detailed projects. During holiday sales, both types of printers become more accessible, allowing buyers to choose the one that best fits their needs and budget. </p>
+
+                <figure class="bix-img">
+                    <img src="images/fdm_prices.png" alt="FDM Printers">
+                    <figcaption>FDM Printer Prices</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/resin_prices.png" alt="Resin Prices">
+                    <figcaption>Resin Printer Prices</figcaption>
+                </figure>
+            </div>
+
+            <div class="smol-box5">
+                <p>3D printing is a revolutionary technology that is transforming the way we design, manufacture, and innovate. By building objects layer by layer from digital designs, it offers unmatched versatility, allowing for the creation of highly customized items in industries like healthcare, fashion, and aerospace. Its cost-effectiveness makes it ideal for prototyping and small-scale manufacturing, enabling businesses to iterate designs quickly and bring products to market faster without the high costs of traditional methods. Additionally, 3D printing is an additive process, significantly reducing waste compared to subtractive manufacturing, and many printers use sustainable materials, aligning with environmental goals. From custom prosthetics and lightweight automotive parts to architectural structures, 3D printing is revolutionizing industries while remaining accessible to hobbyists and small businesses. Affordable printers empower individuals to explore creativity, innovate, and turn ambitious ideas into reality, making 3D printing a valuable tool for professionals and enthusiasts alike.</p>
+            
+                <figure>
+                    <img src="images/why.png" alt="A 3d printer printing gif">
+                    <figcaption>This is a image generated by ai on why you should use 3d printing</figcaption>
+                </figure>
+            </div>
+
+            <div class="smol-box6">
+                <p>3D printing, also known as additive manufacturing, works by creating objects layer by layer from a digital 3D model. The process begins with designing the object using computer-aided design (CAD) software, which is then converted into a file format like STL or OBJ. This file is processed by slicer software, which translates the design into G-code, a set of instructions that the 3D printer follows. The printer then builds the object by depositing material, such as plastic filament in FDM printers or liquid resin in SLA printers, layer by layer. In FDM printing, the filament is heated and extruded through a nozzle, while in resin printing, a UV light cures the liquid resin into solid layers. Each layer is precisely added on top of the previous one, gradually forming the final object. This additive process allows for intricate designs, minimal waste, and the ability to create complex geometries that traditional manufacturing methods cannot achieve.</p>
+            
+                <figure>
+                    <img src="images/FDM-Diagram.jpg" alt="A 3d printer printing gif">
+                    <figcaption>A 3d printer printing a multicolored globe.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/fdm-printer.png" alt="A 3d printer printing gif">
+                    <figcaption>A AI represntation of how a FDM printer works, slightly inaccurate.</figcaption>
+                </figure>
+            </div>
+
+            <div class="smol-box7">
+                <p>
+                    <strong>Prompt:</strong> Give a little bit of history about 3d printing and explain what a slicer is in that too
+                    <br><br>
+                    <strong>Prompt:</strong> Give me a Futuristic image of a FDM printer and a Resin printer next to each other
+                </p>
+
+                <figure>
+                    <img src="images/ai_image.png" alt="A Fun AI Image showing futurisitc 3d printers">
+                    <figcaption>A futureistic Resin Printer vs FDM printer according to AI</figcaption>
+                </figure>
+
+                <p>
+                    <strong>Prompt:</strong> Write a bit about 3d printer prices and when discounts occure, fdm and resin
+                    <br><br>
+                    <strong>Prompt:</strong> Create a prompt about why you should use 3d printing
+                    <br><br>
+                    <strong>Prompt:</strong> Create a prompt about how 3d printing works
+                </p>
+            </div>
+        </main>
+        <footer>
+            <nav> 
+                <a href="https://webpages.uncc.edu/oabdulra/">Charlotte.edu</a> 
+                || 
+                <a href="https://github.com/oabdulr/oabdulr.github.io">Github</a> 
+                ||
+                <a href="https://oabdulr.github.io/itis3135">Github.io</a> 
+                ||
+                <a href="https://www.freecodecamp.org/osamahabd">freeCodeCamp</a> 
+                ||
+                <a href="https://www.codecademy.com/profiles/osamahabd">Codecademy</a> 
+                ||
+                <a href="https://www.linkedin.com/in/osamah-abdulrahman-06a07124b/">LinkedIn</a> 
+            </nav> 
+            <p>Page Built by <a href="oaenterprise.net/">OAE Studios </a>&copy; 2025 </p> 
+            <p><em><a href="https://www.freecodecamp.org/certification/osamahabd/responsive-web-design/">Certified in Responsive Web Design </a></em></p>
+            <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html"> 
+                <img 
+                src="https://oabdulr.github.io/itis3135/z_archives/html_validation.png" 
+                alt="Valid HTML!"> 
+            </a> 
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css"> 
+                <img 
+                src="https://jigsaw.w3.org/css-validator/images/vcss" 
+                alt="Valid CSS!"> 
+            </a> 
+        </footer>
+
+        <script>
+            document.getElementsByClassName('smol-box2')[0].style.display = "none";
+            document.getElementsByClassName('smol-box3')[0].style.display = "none";
+            document.getElementsByClassName('smol-box4')[0].style.display = "none";
+            document.getElementsByClassName('smol-box5')[0].style.display = "none";
+            document.getElementsByClassName('smol-box6')[0].style.display = "none";
+            document.getElementsByClassName('smol-box7')[0].style.display = "none";
+
+            function showSection(sectionId) {
+                document.getElementsByClassName('smol-box1')[0].style.display = "none";
+                document.getElementsByClassName('smol-box2')[0].style.display = "none";
+                document.getElementsByClassName('smol-box3')[0].style.display = "none";
+                document.getElementsByClassName('smol-box4')[0].style.display = "none";
+                document.getElementsByClassName('smol-box5')[0].style.display = "none";
+                document.getElementsByClassName('smol-box6')[0].style.display = "none";
+                document.getElementsByClassName('smol-box7')[0].style.display = "none";
+                
+                if (sectionId === "what"){
+                    document.getElementsByClassName('smol-box1')[0].style.display = "";
+                }
+                else if (sectionId === "about"){
+                    document.getElementsByClassName('smol-box2')[0].style.display = "";
+                }
+                else if (sectionId === "best-options"){
+                    document.getElementsByClassName('smol-box3')[0].style.display = "";
+                }
+                else if (sectionId === "prices"){
+                    document.getElementsByClassName('smol-box4')[0].style.display = "";
+                }
+                else if (sectionId === "why"){
+                    document.getElementsByClassName('smol-box5')[0].style.display = "";
+                }
+                else if (sectionId === "how"){
+                    document.getElementsByClassName('smol-box6')[0].style.display = "";
+                }
+                else if (sectionId === "ai"){
+                    document.getElementsByClassName('smol-box7')[0].style.display = "";
+                }
+            }
+        </script>
+    </body>
+</html>
