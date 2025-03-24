@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tables</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/validation.js"></script>
+
+        <style>
+      
+    
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+
+            th, td {
+                border: 1px solid #ddd; 
+                padding: 8px;
+                text-align: left; 
+            }
+
+            th {
+                background-color: #7ed2e0;
+            }
+            
+            .adiv{
+                display:grid;
+            }
+    
+            
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Activity - HTML Tables - Whimsical Company</h2>
+            <h3>My Tabular Data</h3>
+            <div class="adiv">
+                <ol>
+                    <li>John Doe - johndoe@gmail.com - 1 years</li>
+                    <li>Jane Smith - janesmith@gmail.com - 2 years</li>
+                    <li>Robert Johnson - robert@gmail.com - 3 years</li>
+                    <li>Emily Davis - emilydavis@gmail.com - 4 years</li>
+                    <li>Michael Brown - michael_b@gmail.com - 5 years</li>
+                    <li>Sarah Miller - sarah.miller@gmail.com - 6 years</li>
+                    <li>William Wilson - william@gmail.com - 7 years</li>
+                </ol>
+
+                <h3>Employee Data in Simple Table</h3>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johndoe@gmail.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>janesmith@gmail.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Robert Johnson</td>
+                        <td>robert@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>emilydavis@gmail.com</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>michael_b@gmail.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Miller</td>
+                        <td>sarah.miller@gmail.com</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>William Wilson</td>
+                        <td>william@gmail.com</td>
+                        <td>7</td>
+                    </tr>
+                </table>
+
+
+                <h3>Employee Data in Complex Table</h3>
+                <figure>
+                    <figcaption>Employee Information and Financial Overview</figcaption>
+                    <table>
+                        <tr>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Years of Service</th>
+                            <th>Monthly Salary</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="1">Boss</td>
+                            <td>John Doe</td>
+                            <td>johndoe@gmail.com</td>
+                            <td>1</td>
+                            <td>$400,000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Minon</td>
+                            <td>Jane Smith</td>
+                            <td>janesmith@gmail.com</td>
+                            <td>2</td>
+                            <td>$2,000</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Robert Johnson</td>
+                            <td>robert@gmail.com</td>
+                            <td>3</td>
+                            <td>$1,000</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Janitor</td>
+                            <td>Emily Davis</td>
+                            <td>emilydavis@gmail.com</td>
+                            <td>4</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <td>Michael Brown</td>
+                            <td>michael_b@gmail.com</td>
+                            <td>5</td>
+                            <td>$8</td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Miller</td>
+                            <td>sarah.miller@gmail.com</td>
+                            <td>6</td>
+                            <td>$8</td>
+                        </tr>
+                        <tr>
+                            <td>William Wilson</td>
+                            <td>william@gmail.com</td>
+                            <td>7</td>
+                            <td>$5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Total Years of Service</td>
+                            <td>28</td>
+                            <td>$403,031</td>
+                        </tr>
+                    </table>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/html_include.js"></script>
+    </body>
+</html>
+
