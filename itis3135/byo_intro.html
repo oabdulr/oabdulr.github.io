@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tables</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+
+        <style>
+            form label {
+                display: block;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+            form input[type="text"],
+            form input[type="file"],
+            form textarea {
+                width: 95%; 
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box; 
+            }
+            form input[type="checkbox"] {
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+            form button,
+            form input[type="submit"],
+            form input[type="reset"] {
+                padding: 10px 15px;
+                margin-top: 15px;
+                margin-right: 10px;
+                cursor: pointer;
+                border: 1px solid #555;
+                border-radius: 4px;
+            }
+            form input[type="submit"] {
+                background-color: #4CAF50; 
+                color: white;
+            }
+             form input[type="reset"] {
+                background-color: #ff9800; 
+                color: white;
+            }
+             form .add-course-btn {
+                 background-color: #2196F3; 
+                 color: white;
+                 border: none;
+             }
+
+            .error {
+                color: red;
+                font-size: 0.9em;
+                display: block; 
+                min-height: 1em; 
+                margin-top: 3px;
+            }
+            .course-entry { 
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px; 
+            }
+            .course-entry input[type="text"] {
+                flex-grow: 1; 
+                margin-right: 5px;
+                margin-top: 0; 
+            }
+            .course-entry button {
+                 padding: 5px 10px; 
+                 margin-top: 0;
+                 background-color: #f44336; 
+                 color: white;
+                 border: none;
+                 font-size: 0.9em;
+            }
+             #resultContainer { 
+                margin-top: 20px;
+                padding: 15px;
+                border: 1px solid #ccc;
+                background-color: #f9f9f9;
+                line-height: 1.6;
+            }
+           
+            #resultContainer p, #resultContainer ul {
+                margin: 5px 0 10px 0;
+            }
+             #resultContainer ul {
+                 padding-left: 20px;
+             }
+            #resultContainer img {
+                max-width: 300px; 
+                height: auto;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                display: block;
+                border: 1px solid #eee;
+            }
+            #resultContainer figcaption {
+                font-style: italic;
+                font-size: 0.9em;
+                color: #666;
+                margin-bottom: 15px;
+            }
+            #resetLinkContainer {
+                 margin-top: 20px;
+                 text-align: center;
+                 display: none;
+            }
+            #resetLinkContainer a {
+                cursor: pointer;
+                color: #3bf799;
+                text-decoration: underline;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Activity - BYO</h2>
+            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+            <form id="byoForm" onsubmit="return processForm(event)">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="Your Name" required> 
+                <span class="error" id="nameError"></span>
+
+                <label for="mascot">Mascot:</label>
+                <input type="text" id="mascot" name="mascot" value="Your Mascot" required>
+                <span class="error" id="mascotError"></span>
+
+                <label for="image">Image (PNG or JPG only):</label>
+                <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" required>
+                <span class="error" id="imageError"></span>
+
+                <label for="caption">Image Caption:</label>
+                <input type="text" id="caption" name="caption" value="A picture of [Your Mascot/Your Name]" required>
+                <span class="error" id="captionError"></span>
+
+                <label for="personalBg">Personal Background:</label>
+                <textarea id="personalBg" name="personalBg" rows="4" required>Enter your personal background here...</textarea>
+                <span class="error" id="personalBgError"></span>
+
+                <label for="professionalBg">Professional Background:</label>
+                <textarea id="professionalBg" name="professionalBg" rows="4" required>Enter your professional background here...</textarea>
+                <span class="error" id="professionalBgError"></span>
+
+                <label for="academicBg">Academic Background:</label>
+                <textarea id="academicBg" name="academicBg" rows="4" required>Enter your academic background here...</textarea>
+                <span class="error" id="academicBgError"></span>
+
+                <label for="webDevBg">Background in Web Development:</label>
+                <textarea id="webDevBg" name="webDevBg" rows="4" required>Describe your web development background...</textarea>
+                <span class="error" id="webDevBgError"></span>
+
+                <label for="platform">Primary Computer Platform:</label>
+                <input type="text" id="platform" name="platform" value="e.g., Windows 11, macOS Sonoma, Linux Ubuntu" required>
+                <span class="error" id="platformError"></span>
+
+                <label>Courses currently taking:</label>
+                <div id="coursesContainer">
+                </div>
+                <button type="button" class="add-course-btn" onclick="addCourseInput()">Add Course</button>
+                <span class="error" id="coursesError"></span> 
+
+                <label for="funnyThing">Funny thing?</label>
+                <textarea id="funnyThing" name="funnyThing" rows="3">Tell us something funny...</textarea>
+
+                <label for="anythingElse">Anything else?</label>
+                <textarea id="anythingElse" name="anythingElse" rows="3">Anything else you'd like to add?</textarea>
+
+                <div>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree" style="display: inline; font-weight: normal;">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+                    <span class="error" id="agreeError"></span>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset" onclick="customResetForm()"> 
+                </div>
+            </form>
+
+            <div id="resultContainer" style="display: none;">
+            </div>
+
+            <div id="resetLinkContainer">
+                <a onclick="resetToForm()">Click here to reset and fill out the form again.</a>
+            </div>
+            <br>
+
+
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/html_include.js"></script>
+        <script src="scripts/survey.js"></script> 
+    </body>
+</html>
+
