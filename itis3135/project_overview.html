@@ -21,24 +21,198 @@
             <div data-include="components/header.html"></div>
         </header>
         <main>
-            <h2>Client Project - Part 1</h2>
-            <div class = "main_container" 
-                
-            <h3><strong>Project overview</strong></h3>
-            <div class="project_overview">
-                <p>The purpose of this project is to create a interface for my clients 
-                    company to help with creating and tracking appointments
-                </p>
+            <h2>Client Project Design Document</h2>
+    
+            <h3><strong>Project Overview</strong></h3>
+            <div class="project_overview section-content">
+                <p><strong>Application Description:</strong> This project involves creating a web application named "AppointEase" designed to streamline the appointment scheduling process for small service-based businesses and their clients. It will provide a user-friendly interface for customers to view available services and book appointments online, and an administrative interface for the business owner/staff to manage schedules, services, and client information.</p>
+                <p><strong>Purpose:</strong> The primary purpose of AppointEase is to replace manual or phone-based appointment systems with an efficient, accessible, and automated online solution. This aims to reduce administrative overhead for the business, minimize booking errors, improve customer convenience by allowing 24/7 booking, and provide a clear overview of scheduled appointments.</p>
+                <p><strong>Intended Users:</strong> There are two main groups of users:</p>
+                <ul>
+                    <li><strong>Clients/Customers:</strong> Individuals seeking to book services offered by the business. They need an easy way to see service details, check availability, and schedule appointments.</li>
+                    <li><strong>Business Owner/Staff (Administrators):</strong> Individuals responsible for managing the business's services, schedule availability, viewing booked appointments, and potentially managing basic client information.</li>
+                </ul>
+                <p><strong>Content Overview:</strong> The website will feature a public-facing section including a homepage, service listings, a booking interface, and a contact page. It will also include a password-protected administrative section for managing appointments and settings.</p>
             </div>
-            <h3>Client Information</h3>
-            <h3>Wireframe</h3>
-            <h3>Site Map</h3>
-            <h3>Page Design</h3>
-            <h3>Dynamic Functionality on the website</h3>
-
-
-        </div>
-
+    
+            <hr>
+    
+            <h3><strong>Client Information</strong></h3>
+            <div class="client-info section-content">
+                <ul>
+                    <li><strong>Name of the Client:</strong> Abdullah A.</li>
+                    <li><strong>Organization/Institute/Business:</strong> AA Home Renovation & Repair</li>
+                    <li><strong>Client’s Valid Email Address:</strong> [private]</li>
+                    <li><strong>Client’s Phone Number:</strong> [private]</li>
+                </ul>
+            </div>
+    
+            <hr> <!-- Separator -->
+    
+            <h3><strong>Wireframe</strong></h3>
+            <div class="wireframe section-content">
+                <p>A wireframe provides a blueprint of the webpage's structure and layout, focusing on the arrangement of elements, navigation, and user interface components before applying visual design. Below is the wireframe for the Home page (index.html) created using Draw.io.</p>
+    
+                <figure>
+                    <img src="images/blueprint.drawio.png" alt="Wireframe diagram for the AppointEase home page" style="width:80%; max-width: 700px; border:1px solid #ccc; display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption style="text-align: center; margin-top: 5px;">Figure 1: Home Page Wireframe. Demonstrates layout including header/navigation, hero section, featured services overview, call-to-action button, and footer.</figcaption>
+                </figure>
+            </div>
+    
+            <hr> <!-- Separator -->
+    
+            <h3><strong>Site Map</strong></h3>
+            <div class="sitemap section-content">
+                <p>The site map outlines the structure of the website, showing the different pages and the hierarchical relationship between them. This helps in planning navigation and understanding the overall scope of the application. The sitemap below includes the required five pages plus an admin section.</p>
+    
+                <figure>
+                    <img src="images/SiteMap.drawio.png" alt="Site Map diagram for the AppointEase application" style="width:70%; max-width: 600px; border:1px solid #ccc; display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption style="text-align: center; margin-top: 5px;">Figure 2: AppointEase Site Map. Illustrates navigation flow between Home, Services, Booking, Contact, and Admin Login/Dashboard pages.</figcaption>
+                </figure>
+                 <p>The website will include the following pages:</p>
+                <ul>
+                    <li><strong>index.html</strong> (Home Page)</li>
+                    <li><strong>services.html</strong> (Services Page)</li>
+                    <li><strong>booking.html</strong> (Booking Page)</li>
+                    <li><strong>contact.html</strong> (Contact Page)</li>
+                    <li><strong>admin.html</strong> (Admin Login/Dashboard Page)</li>
+                </ul>
+                 <p>A consistent navigation bar will allow single-click access to Home, Services, Booking, and Contact. Access to the Admin page might be via a separate login link, perhaps in the footer or header.</p>
+            </div>
+    
+            <hr> <!-- Separator -->
+    
+            <h3><strong>Page Design</strong></h3>
+            <div class="page-design section-content">
+                <p>Detailed design specifications for each page identified in the sitemap:</p>
+    
+                <h4>1. Home Page (index.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Introduce the business (AA Home Renovation & Repair), highlight key services, provide trust signals, and guide users towards booking or learning more.</li>
+                    <li><strong>Audience/Users:</strong> Potential and existing customers.</li>
+                    <li><strong>Content:</strong> Business name/logo, compelling headline, brief description, high-quality imagery, overview of popular services, possibly testimonials, clear call-to-action ("Book Now" button), footer with contact info/links.</li>
+                    <li><strong>Data Entry:</strong> No.</li>
+                    <li><strong>Validations:</strong> N/A.</li>
+                    <li><strong>Controls:</strong> Hyperlinks (Navigation Bar, service links, Call-to-Action button).</li>
+                    <li><strong>Actions:</strong> Clicking navigation links loads respective pages. Clicking "Book Now" or service links might navigate to the Services or Booking page.</li>
+                </ul>
+    
+                <h4>2. Services Page (services.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Provide detailed information about all services offered, including descriptions, duration, and pricing.</li>
+                    <li><strong>Audience/Users:</strong> Potential and existing customers evaluating options.</li>
+                    <li><strong>Content:</strong> List of services categorized if necessary. Each service entry includes name, detailed description, duration, price. May include images relevant to services. "Book Now" button associated with each service or a general one.</li>
+                    <li><strong>Data Entry:</strong> No.</li>
+                    <li><strong>Validations:</strong> N/A.</li>
+                    <li><strong>Controls:</strong> Hyperlinks (Navigation Bar), Buttons ("Book Now" per service or general).</li>
+                    <li><strong>Actions:</strong> Clicking "Book Now" could navigate to the Booking page, potentially pre-selecting the chosen service.</li>
+                </ul>
+    
+                <h4>3. Booking Page (booking.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Allow customers to select a service, choose an available date and time, and provide their contact information to book an appointment.</li>
+                    <li><strong>Audience/Users:</strong> Customers ready to book.</li>
+                    <li><strong>Content:</strong> Service selection (dropdown or list), Calendar for date selection, Time slot selection (dynamically populated based on date and service), Form for Name, Email, Phone number, Optional notes field.</li>
+                    <li><strong>Data Entry:</strong> Yes.</li>
+                    <li><strong>Validations:</strong> Required fields (Name, Email, Phone, Service, Date, Time). Email format validation. Date/Time logic (cannot book in the past, must select available slot).</li>
+                    <li><strong>Controls:</strong> Dropdown (Services), Datepicker (Calendar), Radio Buttons/List (Time slots), Text Inputs (Name, Email, Phone), Textarea (Notes), Button ("Confirm Booking").</li>
+                    <li><strong>Actions:</strong>
+                        <ul>
+                            <li>Selecting a date triggers fetching available time slots.</li>
+                            <li>Clicking "Confirm Booking" validates the form data.</li>
+                            <li>On successful validation, submits the booking data.</li>
+                            <li>Navigates to a confirmation message/page or displays an inline success/error message.</li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                <h4>4. Contact Page (contact.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Provide ways for users to contact the business, including a contact form, phone number, email address, physical address, and possibly a map.</li>
+                    <li><strong>Audience/Users:</strong> Potential and existing customers with inquiries.</li>
+                    <li><strong>Content:</strong> Contact form (Name, Email, Subject, Message), Business phone number, Business email address, Physical address, Operating hours.</li>
+                    <li><strong>Data Entry:</strong> Yes (Contact Form).</li>
+                    <li><strong>Validations:</strong> Required fields (Name, Email, Message). Email format validation.</li>
+                    <li><strong>Controls:</strong> Text Inputs (Name, Email, Subject), Textarea (Message), Button ("Send Message").</li>
+                    <li><strong>Actions:</strong> Clicking "Send Message" validates the form. On success, sends the message data and displays a success confirmation .</li>
+                </ul>
+    
+                 <h4>5. Admin Login / Dashboard (admin.html)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Allow authorized staff/owner to log in and manage appointments (view, possibly cancel/modify), manage service offerings, and view schedule availability.</li>
+                    <li><strong>Audience/Users:</strong> Business Owner/Staff (Administrators).</li>
+                    <li><strong>Content:</strong>
+                        <ul>
+                           <li><em>Login View:</em> Username/Password fields, Login button.</li>
+                           <li><em>Dashboard View (Post-Login):</em> Overview of upcoming appointments (list or calendar view), options to view/manage appointments, possibly links to manage services or availability settings.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Entry:</strong> Yes (Login credentials, potentially edits to appointments/services).</li>
+                    <li><strong>Validations:</strong> Required fields (Username, Password). Server-side validation for login credentials. Validation for any data edits made.</li>
+                    <li><strong>Controls:</strong> Text Inputs (Login), Password Input (Login), Buttons ("Login", potentially "Save Changes", "Cancel Appointment"), Table/Calendar display, Links/Buttons for navigation within the admin area.</li>
+                    <li><strong>Actions:</strong>
+                        <ul>
+                           <li>Login attempt validates credentials. Successful login redirects to dashboard view. Failed login shows error.</li>
+                           <li>Viewing appointments displays data.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
+            <hr> <!-- Separator -->
+    
+            <h3><strong>Dynamic Functionality on the website</strong></h3>
+            <div class="dynamic-functionality section-content">
+                <p>The website will incorporate JavaScript and PHP to enhance user experience and provide interactive features:</p>
+                <ul>
+                    <li>
+                        <strong>Interactive Booking Form (booking.html):</strong>
+                        <ul>
+                            <li><strong>Functionality:</strong> A multi-step or dynamic form for selecting services, date, and time, followed by user information input.
+                                <ul>
+                                    <li>A <strong>Date picker</strong> will be used for easy and intuitive date selection.</li>
+                                    <li>Available time slots will be dynamically loaded based on the selected date (and potentially service), likely using <strong>PHP and Lite SQL</strong> to query available slots without reloading the page.</li>
+                                    <li>Client-side form <strong>validation</strong> using JavaScript will check for required fields, email format, etc., before submission, providing immediate feedback to the user.</li>
+                                    <li>Form submission might use <strong>PHP and Lite SQL DB</strong> to send the booking data to the server and display a success or error message without a full page refresh, enhancing the user experience.</li>
+                                 </ul>
+                             </li>
+                            <li><strong>Why:</strong> Makes the booking process smooth, intuitive, and efficient. Reduces user error and provides instant feedback.</li>
+                            <li><strong>Example URLs:</strong> <a href="https://calendly.com/" target="_blank">Calendly</a> (complex scheduling), many online booking systems for salons, doctors, etc.</li>
+                        </ul>
+                    </li>
+                     <li>
+                        <strong>Admin Appointment Management (admin.html):</strong>
+                        <ul>
+                            <li><strong>Functionality:</strong> Displaying the list or calendar of appointments. <strong>PHP and Lite SQL</strong> could be used to:
+                                <ul>
+                                    <li>Fetch and display appointments dynamically.</li>
+                                    <li>Allow admins to cancel or modify appointment statuses without full page reloads.</li>
+                                    <li>Potentially filter or sort appointments based on date or status.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Why:</strong> Provides administrators with a responsive and efficient interface for managing the schedule.</li>
+                            <li><strong>Example URLs:</strong> Features found in many CMS dashboards (like WordPress post management) or project management tools (like Trello card updates).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Contact Form Submission (contact.html):</strong>
+                        <ul>
+                            <li><strong>Functionality:</strong> Use JavaScript for client-side <strong>validation</strong>. Implement <strong>PHP and Lite SQl</strong> submission to send the form data and display a "Message Sent!" or error notification directly on the page without navigating away.</li>
+                            <li><strong>Why:</strong> Improves user experience by providing immediate feedback without disrupting their place on the site.</li>
+                            <li><strong>Example URLs:</strong> Most modern website contact forms utilize this pattern.</li>
+                        </ul>
+                    </li>
+                     <li>
+                        <strong>Consistent Header/Footer Loading:</strong>
+                        <ul>
+                            <li><strong>Functionality:</strong> The provided `html_include.js` script likely uses JavaScript to load `components/header.html` and `components/footer.html` into each page.</li>
+                            <li><strong>Why:</strong> Ensures consistency across all pages and makes updates easier (only need to edit the component files).</li>
+                            <li><strong>Example URLs:</strong> This is a common development pattern, often handled by frameworks or simple custom scripts like the one provided.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
