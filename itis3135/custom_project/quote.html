@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a free estimate for your home renovation or repair project from AA Home Renovation & Repair.">
+    <title>Request Estimate - AA Home Renovation & Repair</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- Remove jQuery UI CSS link if not using Datepicker -->
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">AA Home Renovation & Repair</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="quote.html" class="active">Get Quote</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Request Your Free Estimate</h2>
+        <p class="text-center">Tell us about your project! Fill out the form below, and we'll get back to you to discuss your needs and schedule a consultation if necessary.</p>
+
+        <form action="#" method="POST" class="booking-form"> <!-- Action will be handled by JS/backend later -->
+
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                <div class="form-group">
+                    <label for="user-name">Full Name:</label>
+                    <input type="text" id="user-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="user-email" name="email" required>
+                </div>
+                 <div class="form-group">
+                    <label for="user-phone">Phone Number:</label>
+                    <input type="tel" id="user-phone" name="phone" placeholder="e.g., 555-123-4567" required>
+                </div>
+                 <div class="form-group">
+                    <label for="user-address">Address of Property (for estimate):</label>
+                    <input type="text" id="user-address" name="address" required>
+                </div>
+            </fieldset>
+
+             <fieldset style="margin-top: 20px;">
+                <legend>Project Details</legend>
+                 <div class="form-group">
+                    <label for="service-interest">Primary Area of Interest:</label>
+                    <select id="service-interest" name="interest" required>
+                        <option value="">-- Please Select --</option>
+                        <option value="kitchen_remodel">Kitchen Remodeling</option>
+                        <option value="bathroom_remodel">Bathroom Remodeling</option>
+                        <option value="basement_finishing">Basement Finishing</option>
+                        <option value="addition">Home Addition</option>
+                        <option value="flooring_tile">Flooring / Tile</option>
+                        <option value="painting">Painting (Interior/Exterior)</option>
+                        <option value="windows_doors">Windows / Doors</option>
+                        <option value="deck_fence">Deck / Fence</option>
+                        <option value="general_repairs">General Repairs / Handyman</option>
+                        <option value="other">Other (Describe Below)</option>
+                    </select>
+                </div>
+
+                 <div class="form-group">
+                    <label for="project-description">Brief Description of Project:</label>
+                    <textarea id="project-description" name="description" rows="6" placeholder="Please provide details about the work you need done (e.g., scope, desired timeline, specific issues)." required></textarea>
+                </div>
+            </fieldset>
+
+
+            <div class="text-center" style="margin-top: 20px;">
+                <button type="submit" class="button">Submit Request</button>
+            </div>
+
+        </form>
+         <p class="text-center" style="margin-top: 20px; font-size: 0.9em;">We typically respond within 1-2 business days.</p>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> AA Home Renovation & Repair. All Rights Reserved.</p>
+            <p>[Private]</p>
+             <div class="validation-links">
+                <a href="https://validator.w3.org/check?uri=referer" target="_blank">HTML Validation</a> |
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">CSS Validation</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Remove jQuery/UI includes if not needed, or keep for potential future enhancements -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script> -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Add JS later for form validation and AJAX submission
+        // Datepicker code removed as it's not relevant here
+    </script>
+
+</body>
+</html>
