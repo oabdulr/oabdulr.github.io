@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Osamah Abdulrahman Operative Aurochs || ITIS 3135 Slideshow</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/validation.js"></script>
+        <style>
+            .slideshow-container {
+            max-width: 500px;
+            position: relative;
+            margin: auto;
+            }
+
+            /* Hide the images by default */
+            .mySlides {
+            display: none;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+            }
+
+            .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            }
+
+            .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+
+            .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+            background-color: #717171;
+            }
+
+            .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>  
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="images/Slideshow/Octopus.png" alt = "Octopus - Osamah" style="width:100%">
+                  <div class="text">Octopus - Osamah</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="images/Slideshow/Soap.png" alt = "Soap - oSamah" style="width:100%">
+                  <div class="text">Soap - oSamah</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="images/Slideshow/apple.png" alt = "Apple - osAmah" style="width:100%">
+                  <div class="text">Apple - osAmah</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/Slideshow/maple_tree.png" alt = "Maple Tree - osaMah" style="width:100%">
+                    <div class="text">Maple Tree - osaMah</div>
+                </div>
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/Slideshow/armadillo.png" alt = "Armadillo - osamAh" style="width:100%">
+                    <div class="text">Armadillo - osamAh</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/Slideshow/headphones.png" alt="Headphone - osamaH" style="width:100%">
+                    <div class="text">Headphone - osamaH</div>
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+              </div>
+
+
+              <br>
+              <br>
+
+              <h3>Notes / AI Prompts:</h3>
+              <ul>
+                <li>Create an image of a Octopus</li>
+                <li>Create an image of a Soap</li>
+                <li>Create an image of a apple</li>
+                <li>Create an image of a maple tree</li>
+                <li>Create an image of a armadillo</li>
+                <li>Create an image of headphones</li>
+              </ul>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/html_include.js"></script>
+        <script>
+            let slideIndex = 1;
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            
+        </script>
+    </body>
+</html>
+
