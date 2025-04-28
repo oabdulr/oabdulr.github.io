@@ -4,46 +4,50 @@ body {
     font-family: monospace;
     font-size: medium;
 }
-
+    
 a {
     color: darkgreen;
     text-decoration: none;
 }
-
-a:hover {
+    
+a
+ {
     color: darkkhaki;
 }
-
+    
 main {
     text-align: left;
     max-width: 1200px;
-    width: 90%; 
-    margin: 0 auto; 
+    width: 90%;
+    margin: 0 auto;
 }
-
+    
 h2 {
     text-align: center;
 }
-
+    
 figure {
     text-align: center;
 }
-
+    
 img {
     max-width: 100%;
     height: auto;
 }
-
-/*tablet*/
+    
 @media (max-width: 768px) {
     main {
-        width: 95%; 
+        width: 95%;
     }
 }
-
-/*Mobile*/
+    
 @media (max-width: 480px) {
     main {
         width: 100%;
     }
+}
+    
+canvas {
+    display: block;
+    margin: auto;
 }
