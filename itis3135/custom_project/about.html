@@ -9,18 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1><a href="index.html">AA Home Renovation & Repair</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="quote.html">Get Quote</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div data-include="components/header.html"></div>
     </header>
 
     <main class="container">
@@ -61,5 +50,7 @@
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
+    <script src="scripts/html_include.js"></script>
+    <script src="scripts/theme_toggle.js"></script>
 </body>
 </html>

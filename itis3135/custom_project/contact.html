@@ -9,18 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1><a href="index.html">AA Home Renovation & Repair</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="quote.html">Get Quote</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div data-include="components/header.html"></div>
     </header>
 
     <main class="container">
@@ -35,7 +24,6 @@
                     [Private]<br>
                 </address>
                 <p><strong>Service Area:</strong> Serving Charlotte and surrounding areas.</p>
-                <p><a href="#" target="_blank">placeholder</a></p>
             </div>
             <div>
                 <h3>Contact Details</h3>
@@ -89,5 +77,7 @@
         document.getElementById('currentYear').textContent = new Date().getFullYear();
         // Add JS later for form validation and AJAX submission
     </script>
+    <script src="scripts/html_include.js"></script>
+    <script src="scripts/theme_toggle.js"></script>
 </body>
 </html>
