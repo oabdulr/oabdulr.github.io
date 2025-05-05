@@ -49,4 +49,6 @@ window.matchMedia('(prefers-color-scheme: dark)')
   updateToggleIcon();
   await new Promise(r => setTimeout(r, 50));
   updateToggleIcon();
+  await new Promise(r => setTimeout(r, 500));
+  updateToggleIcon();
 })();

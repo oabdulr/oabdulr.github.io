@@ -18,9 +18,8 @@
         <h2>Request Your Free Estimate</h2>
         <p class="text-center">Tell us about your project! Fill out the form below, and we'll get back to you to discuss your needs and schedule a consultation if necessary.</p>
 
-        <form action="#" method="POST" class="booking-form"> <!-- Action will be handled by JS/backend later -->
+        <form action="https://formspree.io/f/xrbqqgva" method="POST" class="booking-form">
 
-            <fieldset>
                 <legend>Your Contact Information</legend>
                 <div class="form-group">
                     <label for="user-name">Full Name:</label>
@@ -38,9 +37,7 @@
                     <label for="user-address">Address of Property (for estimate):</label>
                     <input type="text" id="user-address" name="address" required>
                 </div>
-            </fieldset>
 
-             <fieldset style="margin-top: 20px;">
                 <legend>Project Details</legend>
                  <div class="form-group">
                     <label for="service-interest">Primary Area of Interest:</label>
@@ -63,7 +60,6 @@
                     <label for="project-description">Brief Description of Project:</label>
                     <textarea id="project-description" name="description" rows="6" placeholder="Please provide details about the work you need done (e.g., scope, desired timeline, specific issues)." required></textarea>
                 </div>
-            </fieldset>
 
 
             <div class="text-center" style="margin-top: 20px;">
@@ -86,13 +82,9 @@
         </div>
     </footer>
 
-    <!-- Remove jQuery/UI includes if not needed, or keep for potential future enhancements -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script> -->
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-        // Add JS later for form validation and AJAX submission
-        // Datepicker code removed as it's not relevant here
     </script>
     <script src="scripts/html_include.js"></script>
     <script src="scripts/theme_toggle.js"></script>

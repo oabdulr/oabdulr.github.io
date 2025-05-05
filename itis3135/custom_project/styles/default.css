@@ -185,7 +185,8 @@ nav ul li a.active {
 }
 
 form {
-  background-color: var(--footer-bg);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0 2px 5px var(--box-shadow-color);
